@@ -1,0 +1,18 @@
+.nav {
+    max-height: 132px;
+    display: flex;
+    flex-direction: row;
+    &_logo {
+        margin-top: 32px;
+    }
+    &__menu {
+        color : $bleu;        
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+    }
+    &__listElt{
+        list-style: none;
+    }
+}
