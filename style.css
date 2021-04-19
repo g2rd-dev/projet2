@@ -1,0 +1,26 @@
+h2 {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.nav {
+  max-height: 132px;
+  display: flex;
+  flex-direction: row;
+}
+.nav_logo {
+  margin-top: 32px;
+}
+.nav__menu {
+  color: #0065FC;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+}
+
+
