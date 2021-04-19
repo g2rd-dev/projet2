@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" rel="stylesheet" type="text/css">
     <title>Document</title>
@@ -15,24 +17,21 @@
         </div>
         <div class="nav__menu">
             <ul class="nav__list">
-                <li class="nav__listElt">Hébergements</li>
-                <li class="nav__listElt">Activités</li>
-                <li class="nav__listElt">S'inscrire</li>
+                <li class="nav__listElt"><a href="#">Hébergements</a></li>
+                <li class="nav__listElt"><a href="">Activités</a></li>
             </ul>
+        <div class="nav__sing">
+            <a href="">S'inscrire</a></div>
         </div>
     </nav>
-    <section>
+    <section class="section-color-white">
         <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
-        En plein centre ville ou en pleine nature
-        <div class="search">    
-            <div class="search__icon">
-                <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <input class="search" placeholder="Marseille, France">
-            <div class="search__loop">
-                <i class="fas fa-search"></i>
-            </div>
-        </div>
+        <p>En plein centre ville ou en pleine nature</p>
+        <form class="search">    
+            <i class="fas fa-map-marker-alt"></i>
+            <input class="search" type="text" placeholder="Marseille, France">
+            <i class="fas fa-search"></i>
+        </form>
         <h2>Filtres</h2>
         <ul>
             <li><i class="fas fa-money-bill-wave"></i>Économique</li>
@@ -42,7 +41,7 @@
         </ul>
         <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
     </section>
-    <section class="section-color">
+    <section class="section-color-grey">
         <h2 class="titre">Les plus populaires</h2>
         <i class="fas fa-chart-line"></i>
         <a href="" class="card">
@@ -88,7 +87,7 @@
             </div>
         </a>
     </section>
-    <section>
+    <section class="section-color-white">
         <h2>Hébergements à Marseille</h2>
         <a href="" class="card">
             <div class="card__phototop">
@@ -176,7 +175,7 @@
         </a>
         <div>Afficher plus</div>
     </section>
-    <section>
+    <section class="section-color-white">
         <h2>Activités à Marseilles</h2>
         <a href="" class="card">
             <div class="card__phototop">
@@ -215,7 +214,7 @@
             <div class="card__title">Parc Longchamp</div>
         </a>
     </section>
-    <section>
+    <section class="section-color-grey">
         <ul class="col-1">
             <li><h3>A propos</h3></li>
             <li><a href="#">Fonctionnement du site</a></li>
