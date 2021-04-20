@@ -11,81 +11,104 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav__logo">
+    <header>
+        <div class="logo">
             <img src="./img/logo/Reservia.svg" alt="">
         </div>
-        <div class="nav__menu">
-            <ul class="nav__list">
-                <li class="nav__listElt"><a href="#">Hébergements</a></li>
-                <li class="nav__listElt"><a href="">Activités</a></li>
+        <nav>
+            <ul>
+                <li class="nav"><a href="#" active>Hébergements</a></li>
+                <li class="nav"><a href="#">Activités</a></li>
+                <li class="sing"><a href="#">S'inscrire</a></div></li>
             </ul>
-        <div class="nav__sing">
-            <a href="">S'inscrire</a></div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <section class="section-color-white">
         <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
         <p>En plein centre ville ou en pleine nature</p>
-        <form class="search">    
+        <form class="search">
             <i class="fas fa-map-marker-alt"></i>
             <input class="search" type="text" placeholder="Marseille, France">
             <i class="fas fa-search"></i>
+            </ul> 
         </form>
         <h2>Filtres</h2>
-        <ul>
-            <li><i class="fas fa-money-bill-wave"></i>Économique</li>
-            <li><i class="fas fa-child"></i>Familial</li>
-            <li><i class="fas fa-heart"></i>Romantique</li>
-            <li><i class="fas fa-dog"></i>Animaux autorisés</li>
+        <ul class="filter">
+            <li class="filter__liste"><i class="fas fa-money-bill-wave"></i>Économique</li>
+            <li class="filter__liste"><i class="fas fa-child"></i>Familial</li>
+            <li class="filter__liste"><i class="fas fa-heart"></i>Romantique</li>
+            <li class="filter__liste"><i class="fas fa-dog"></i>Animaux autorisés</li>
         </ul>
-        <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+        <p class="info"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
     </section>
     <section class="section-color-grey">
-        <h2 class="titre">Les plus populaires</h2>
-        <i class="fas fa-chart-line"></i>
-        <a href="" class="card">
-            <div class="card__photoleft">
-                <img src="./img/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="img responsive">
-            </div>
-            <div class="card__title"><h3>Hôtel Le soleil du Matin</h3></div>
-            <div class="card__description">Nuit à partir de 128€</div>
-            <div class="card__stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-        </a>
-        <a href="" class="card">
-            <div class="card__photoleft">
-                <img src="./img/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="img responsive">
-            </div>
-            <div class="card__title"><h3>Au coeur de l'eau Chambres d'hôtes</h3></div>
-            <div class="card__description">Nuit à partir de 71€</div>
-            <div class="card__stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-        </a>
-        <a href="" class="card">
-            <div class="card__photoleft">
-                <img src="./img/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="img responsive">
-            </div>
-            <div class="card__title">Hôtel Tout bleu et Blanc</div>
-            <div class="card__description">Nuit à partir de 68€</div>
-            <div class="card__stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-        </a>
+        <div class="titre">
+            <h2>Les plus populaires</h2>
+            <i class="fas fa-chart-line"></i>
+        </div>
+        
+         <ul class="listCard">
+             <li>
+                <a href="" class="card card--left">
+                    <div class="card__photoleft">
+                        <div class="card__mediabox">
+                            <img src="./img/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="card__media" alt="img responsive">
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title"><h3>Hôtel Le soleil du Matin</h3></div>
+                        <div class="card__description">Nuit à partir de 128€</div>
+                        <div class="card__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </a>
+             </li>
+             <li>
+                <a href="" class="card card--left">
+                    <div class="card__photoleft">
+                        <div class="card__mediabox">
+                            <img src="./img/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" class="card__media" alt="img responsive">
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title"><h3>Hôtel Le soleil du Matin</h3></div>
+                        <div class="card__description">Nuit à partir de 128€</div>
+                        <div class="card__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star grey"></i>
+                        </div>
+                    </div>
+                </a>
+             </li>
+             <li>
+                <a href="" class="card card--left">
+                    <div class="card__photoleft">
+                        <div class="card__mediabox">
+                            <img src="./img/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="card__media" alt="img responsive">
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title"><h3>Hôtel Le soleil du Matin</h3></div>
+                        <div class="card__description">Nuit à partir de 128€</div>
+                        <div class="card__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star grey"></i>
+                        </div>
+                    </div>
+                </a>
+             </li>
+        </ul>
     </section>
     <section class="section-color-white">
         <h2>Hébergements à Marseille</h2>
