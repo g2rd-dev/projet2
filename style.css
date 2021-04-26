@@ -49,6 +49,9 @@ nav ul {
 li.navLien:hover {
   border-bottom: 3px solid #0065FC;
 }
+li.navLien:active {
+  border-bottom: 3px solid #0065FC;
+}
 li.navLien {
   width: 50%;
   text-align: center;
@@ -106,8 +109,19 @@ form ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: #fff;
+  margin: 8px 3px;
+}
+.filter__liste:hover {
+  border: 3px solid #0065FC;
+  background-color: #F2F2F2;
 }
 
+.fa-map-marker-alt, .fa-search, .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 input {
   border: none;
 }
@@ -116,13 +130,26 @@ input {
   color: #0065FC;
   border-radius: 25px;
 }
-.fa-info {
-  width: 24px;
-  height: 24px;
+.filter .fas:hover {
+  background-color: #0065FC;
+  color: #DEEBFF;
+}
+span.filter__icon {
+  margin: -7px 10px -5px -7px;
+}
+.info {
+  margin : 35px 0;
   display: flex;
+}
+.fa-info {
+  width: 25px;
+  height: 25px;
   color: #0065FC;
   border: 2px solid #F2F2F2;
-  border-radius: 12px;
+  border-radius: 15px;
+}
+.info__p {
+  margin: 0 0 0 10px;
 }
 
 /**** Card ****/

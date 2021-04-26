@@ -28,18 +28,41 @@
         <p>En plein centre ville ou en pleine nature</p>
         <form class="search">
             <i class="fas fa-map-marker-alt"></i>
-            <input class="search" type="text" placeholder="Marseille, France">
+            <input class="search" type="text" value="Marseille, France" placeholder="Recherchez">
             <i class="fas fa-search"></i>
             </ul> 
         </form>
         <h2>Filtres</h2>
-        <ul class="filter">
-            <li class="filter__liste"><i class="fas fa-money-bill-wave"></i>Économique</li>
-            <li class="filter__liste"><i class="fas fa-child"></i>Familial</li>
-            <li class="filter__liste"><i class="fas fa-heart"></i>Romantique</li>
-            <li class="filter__liste"><i class="fas fa-dog"></i>Animaux autorisés</li>
-        </ul>
-        <p class="info"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+        <div class="filter">
+            <button class="filter__liste" type="button">
+                <span class="filter__icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                </span> 
+                <span class="filter__text">Économique</span> 
+            </button>
+            <button class="filter__liste" type="button">
+                <span class="filter__icon">
+                    <i class="fas fa-child"></i>
+                </span> 
+                <span class="filter__text">Familial</span> 
+            </button>
+            <button class="filter__liste" type="button">
+                <span class="filter__icon">
+                    <i class="fas fa-heart"></i>
+                </span> 
+                <span class="filter__text">Romantique</span> 
+            </button>
+            <button class="filter__liste" type="button">
+                <span class="filter__icon">
+                    <i class="fas fa-dog"></i>
+                </span> 
+                <span class="filter__text">Animaux autorisés</span> 
+            </button>
+        </div>
+        <div class="info">
+            <i class="fas fa-info"></i>
+            <p class="info__p">Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
     </section>
     <section class="section-color-grey">
         <div class="titre">
