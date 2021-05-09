@@ -15,18 +15,22 @@ body {
 }
 h1, h2 {
   font-size: 16px;
-  font-weight: bold;
 }
 h3, p {
   font-size: 12px;
   margin: 0;
+}
+h1, h2, h3, button, .tarif, input.search {
   font-weight: bold;
 }
-a {
+a, button {
   cursor: pointer;
   text-decoration: none;
   color: #000;
   font-size: 14px;
+}
+a:hover{
+  color: var(--first-color);
 }
 li {
   list-style: none;
@@ -72,6 +76,9 @@ li.navLien {
   padding-bottom: 17px;
 }
 /** Section recherche **/
+.formSearch {
+  padding: 40px 0;
+}
 form{
   border: 3px solid var(--third-color);
   border-radius: 15px;
@@ -100,6 +107,7 @@ form .fa-search {
 }
 input.search {
   width: 80%;
+  padding: 0 10px;
 }
 .filter__liste .fas{
   width: 50px;
@@ -120,8 +128,6 @@ input.search {
 .filter__liste {
   border: 3px solid var(--third-color);
   border-radius: 25px;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   background-color: #fff;
   margin: 8px 5px;
@@ -129,6 +135,11 @@ input.search {
 .filter__liste:hover {
   border: 3px solid var(--first-color);
   background-color: var(--third-color);
+}
+label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .filter__liste:hover .fas {
   background-color: var(--first-color);
@@ -151,8 +162,11 @@ input {
 .filter__liste .check{
   display: none;
 }
-input:checked + .filter__icon {
+input:checked + .filtreCheck {
 border: 2px solid var(--firs-color);
+}
+input:checked + .filtreCheck .filter__icon{
+  border: 2px solid var(--firs-color);
 }
 span.filter__icon {
   margin: -5px 0px -5px -7px;
@@ -189,6 +203,10 @@ span.filter__icon {
   display: flex;
   border-radius: 15px;
   box-shadow: 5px 5px 5px var(--third-color);
+  transition: 1s;
+}
+.card:hover{
+  box-shadow: 5px 5px 5px #000;
 }
 .card--left {
   flex-direction: row;
@@ -255,14 +273,18 @@ li .grey {
   padding: 12px 18px;
   box-sizing: border-box;
 }
-.cardTop__title {
-  font-weight: bold;
+.more {
+  background: none;
+  border: none;
 }
 
 /** Activité Marseille **/
-.card__title {
-  padding: 22px 0 24px 20px;
-  font-weight: bold;
+
+.card--full{
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 190px;
 }
 
 /** FOOTER **/
@@ -275,3 +297,15 @@ footer{
 .col-1 {
   margin: 0 0 40px 0;
 }
+
+@media (min-width: 768px) { 
+.filter {
+  flex-wrap: nowrap;
+}
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+}
+
