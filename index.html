@@ -29,41 +29,43 @@
             <p>En plein centre ville ou en pleine nature</p>
             <div class="formSearch">
                 <form class="search">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <button class="search__button search__button--grey"><i class="fas fa-map-marker-alt"></i></button>
                     <input class="search" type="text" value="Marseille, France" placeholder="Recherchez">
-                    <i class="fas fa-search"></i>
+                    <button class="search__button search__button--bleu"><i class="fas fa-search"></i><span class="search__text">Rechercher</span></button>
                     </ul> 
                 </form>
             </div>
-            <h2>Filtres</h2>
             <div class="filter">
-                <div class="filter__liste" type="checkbox">
-                    <input class="check" type="checkbox" name="filter[]" id="eco" value="economique"/>
-                    <label class="filtreCheck" for="eco">
-                        <span class="filter__icon"><i class="fas fa-money-bill-wave"></i></span> 
-                        <span class="filter__text">Économique</span>
-                    </label> 
-                </div>
-                <div class="filter__liste" type="checkbox">
-                    <input class="check" type="checkbox" name="filter[]" id="fam" value="familial"/>
-                    <label class="filtreCheck" for="fam">                    
-                        <span class="filter__icon"><i class="fas fa-child"></i></span> 
-                        <span class="filter__text">Familial</span>
-                    </label>
-                </div>
-                <div class="filter__liste" type="checkbox">
-                    <input class="check" type="checkbox" name="filter[]" id="rom" value="romantique"/>
-                    <label class="filtreCheck" for="rom">
-                        <span class="filter__icon"><i class="fas fa-heart"></i></span> 
-                        <span class="filter__text">Romantique</span> 
-                    </label>
-                </div>
+                <h2>Filtres</h2>
                 <div class="filter__liste">
-                    <input class="check" type="checkbox" name="filter[]" id="dog" value="dog"/>
-                    <label class="filtreCheck" for="dog">
-                        <span class="filter__icon"><i class="fas fa-dog"></i></span> 
-                        <span class="filter__text">Animaux autorisés</span> 
-                    </label>
+                    <div class="filter__icone" type="checkbox">
+                        <input class="check" type="checkbox" name="filter[]" id="eco" value="economique"/>
+                        <label class="filtreCheck" for="eco">
+                            <span class="filter__icon"><i class="fas fa-money-bill-wave"></i></span> 
+                            <span class="filter__text">Économique</span>
+                        </label> 
+                    </div>
+                    <div class="filter__icone" type="checkbox">
+                        <input class="check" type="checkbox" name="filter[]" id="fam" value="familial"/>
+                        <label class="filtreCheck" for="fam">                    
+                            <span class="filter__icon"><i class="fas fa-child"></i></span> 
+                            <span class="filter__text">Familial</span>
+                        </label>
+                    </div>
+                    <div class="filter__icone" type="checkbox">
+                        <input class="check" type="checkbox" name="filter[]" id="rom" value="romantique"/>
+                        <label class="filtreCheck" for="rom">
+                            <span class="filter__icon"><i class="fas fa-heart"></i></span> 
+                            <span class="filter__text">Romantique</span> 
+                        </label>
+                    </div>
+                    <div class="filter__icone">
+                        <input class="check" type="checkbox" name="filter[]" id="dog" value="dog"/>
+                        <label class="filtreCheck" for="dog">
+                            <span class="filter__icon"><i class="fas fa-dog"></i></span> 
+                            <span class="filter__text">Animaux autorisés</span> 
+                        </label>
+                    </div>
                 </div>
             </div>
             <div class="info">

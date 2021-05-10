@@ -41,6 +41,10 @@ ul {
 section {
   padding: 20px;
 }
+button {
+  background: none;
+  border: none;
+}
 /** Navigation **/
 .header{
   height: 132px;
@@ -76,6 +80,7 @@ li.navLien {
   padding-bottom: 17px;
 }
 /** Section recherche **/
+
 .formSearch {
   padding: 40px 0;
 }
@@ -89,27 +94,30 @@ form{
   justify-content: space-between;
   margin: auto;
 }
-form .fa-map-marker-alt{
-  background-color: var(--third-color);
-  border-radius: 15px 0px 0px 15px;
+.search__button {
   width: 20%;
   height: 50px;
+}
+.search__button--grey {
+  background-color: var(--third-color);
+  border-radius: 15px 0px 0px 15px;
+}
+.search__button--bleu {
+  background-color: var(--first-color);
+  color: #fff;
+  border-radius: 0 15px 15px 0;
+}
+.search__text {
+  display: none;
 }
 form:nth-child(2) {
   flex: 1;
-}
-form .fa-search {
-  background-color: var(--first-color);
-  color: #fff;
-  border-radius: 15px;
-  width: 20%;
-  height: 50px;
 }
 input.search {
   width: 80%;
   padding: 0 10px;
 }
-.filter__liste .fas{
+.filter__icone .fas{
   width: 50px;
   height: 50px;
   text-align: center;
@@ -119,20 +127,20 @@ input.search {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.filter {
+.filter__liste {
   padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.filter__liste {
+.filter__icone {
   border: 3px solid var(--third-color);
   border-radius: 25px;
   align-items: center;
   background-color: #fff;
   margin: 8px 5px;
 }
-.filter__liste:hover {
+.filter__icone:hover {
   border: 3px solid var(--first-color);
   background-color: var(--third-color);
 }
@@ -141,7 +149,7 @@ label {
   flex-direction: row;
   align-items: center;
 }
-.filter__liste:hover .fas {
+.filter__icone:hover .fas {
   background-color: var(--first-color);
   color: var(--second-color);
 }
@@ -154,12 +162,12 @@ label {
 input {
   border: none;
 }
-.filter .fas {
+.filter__liste .fas {
   background-color: var(--second-color);
   color: var(--first-color);
   border-radius: 25px;
 }
-.filter__liste .check{
+.filter__icone .check{
   display: none;
 }
 input:checked + .filtreCheck {
@@ -174,6 +182,7 @@ span.filter__icon {
 .info {
   margin : 35px 0;
   display: flex;
+  align-items:center;
 }
 .fa-info {
   width: 25px;
@@ -273,12 +282,8 @@ li .grey {
   padding: 12px 18px;
   box-sizing: border-box;
 }
-.more {
-  background: none;
-  border: none;
-}
 
-/** Activité Marseille **/
+  /** Activité Marseille **/
 
 .card--full{
   flex-direction: column;
@@ -299,7 +304,19 @@ footer{
 }
 
 @media (min-width: 768px) { 
-.filter {
+form {
+    margin: 0;
+}
+.search__button--bleu {
+  width: 135px;
+}
+.search__text {
+  display:block;
+}
+.fa-search{
+  display: none;
+}
+.filter__liste {
   flex-wrap: nowrap;
 }
 footer{
@@ -307,5 +324,9 @@ footer{
   flex-wrap: wrap;
   justify-content: space-around;
 }
+}
+
+@media screen and (min-width:1024px){ 
+
 }
 
