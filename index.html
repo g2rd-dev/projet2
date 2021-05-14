@@ -24,7 +24,7 @@
         </nav>
     </header>
     <main>
-        <section class="section-color-white">
+        <section class="section__color--white">
             <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <div class="formSearch">
@@ -73,7 +73,7 @@
                 <p class="info__p">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
-        <section class="section-color-grey">
+        <section class="section__color--grey">
             <div class="titre">
                 <h2>Les plus populaires</h2>
                 <i class="fas fa-chart-line"></i>
@@ -141,10 +141,10 @@
                 </li>
             </ul>
         </section>
-        <section class="section-color-white" id="hebergement">
+        <section class="section__color--white tablette--grey" id="hebergement">
             <h2>Hébergements à Marseille</h2>
             <ul class="listCard">
-                <li>
+                <li class="cardTop">
                     <a href="" class="card card--top">
                         <div class="cardTop__photo">
                             <img src="./img/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="img responsive">
@@ -162,7 +162,7 @@
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class="cardTop">
                     <a href="" class="card card--top">
                         <div class="cardTop__photo">
                             <img src="./img/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="img responsive">
@@ -180,7 +180,7 @@
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class="cardTop">
                     <a href="" class="card card--top">
                         <div class="cardTop__photo">
                             <img src="./img/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="img responsive">
@@ -198,7 +198,7 @@
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class="cardTop">
                     <a href="" class="card card--top">
                         <div class="cardTop__photo">
                             <img src="./img/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img responsive">
@@ -216,7 +216,7 @@
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class="cardTop">
                     <a href="" class="card card--top">
                         <div class="cardTop__photo">
                             <img src="./img/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="img responsive">
@@ -234,7 +234,7 @@
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class="cardTop">
                     <a href="" class="card card--top">
                         <div class="cardTop__photo">
                             <img src="./img/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="img responsive">
@@ -255,74 +255,82 @@
             </ul>
             <button class="more">Afficher plus</button>
         </section>
-        <section class="section-color-white" id="activite">
+        <section class="section__color--white" id="activite">
             <h2>Activités à Marseilles</h2>
-            <ul class="listCard">
-                <li>
-                    <a href="" class="card card--top">
-                        <div class="cardTop__photo">
-                            <img src="./img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="img responsive">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Vieux Port</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="card card--full">
-                        <div class="cardTop__photo">
-                            <img src="./img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="img responsive">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Fort de Pomègues</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="card card--full">
-                        <div class="cardTop__photo">
-                            <img src="./img/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="img responsive">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Îles du Frioul</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="card card--full">
-                        <div class="cardTop__photo">
-                            <img src="./img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="img responsive">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Parc National des Calanques</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="card card--full">
-                        <div class="cardTop__photo">
-                            <img src="./img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="img responsive">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Notre-Dame-de-la-Garde</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="card card--full">
-                        <div class="cardTop__photo">
-                            <img src="./img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="img responsive">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Parc Longchamp</h3>
-                        </div>
-                    </a>
-                </li>
+            <ul class="listCard listCard__tab">
+                <div class="col-1">
+                    <li>
+                        <a href="" class="card card--full">
+                            <div class="cardTop__photo">
+                                <img src="./img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="img responsive">
+                            </div>
+                            <div class="card__content">
+                                <h3 class="card__title">Vieux Port</h3>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+                <div class="col-1">
+                    <li>
+                        <a href="" class="card card--full">
+                            <div class="cardTop__photo">
+                                <img src="./img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="img responsive">
+                            </div>
+                            <div class="card__content">
+                                <h3 class="card__title">Fort de Pomègues</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="card card--full">
+                            <div class="cardTop__photo">
+                                <img src="./img/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="img responsive">
+                            </div>
+                            <div class="card__content">
+                                <h3 class="card__title">Îles du Frioul</h3>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+                <div class="col-1">
+                    <li>
+                        <a href="" class="card card--full">
+                            <div class="cardTop__photo">
+                                <img src="./img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="img responsive">
+                            </div>
+                            <div class="card__content">
+                                <h3 class="card__title">Parc National des Calanques</h3>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+                <div class="col-1">
+                    <li>
+                        <a href="" class="card card--full">
+                            <div class="cardTop__photo">
+                                <img src="./img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="img responsive">
+                            </div>
+                            <div class="card__content">
+                                <h3 class="card__title">Notre-Dame-de-la-Garde</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="card card--full">
+                            <div class="cardTop__photo">
+                                <img src="./img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="img responsive">
+                            </div>
+                            <div class="card__content">
+                                <h3 class="card__title">Parc Longchamp</h3>
+                            </div>
+                        </a>
+                    </li>
+                </div>
             </ul>
         </section>
     </main>
-    <footer class="section-color-grey">
-        <div class="col-1">
+    <footer class="section__color--grey">
+        <div class="col">
             <h2>A propos</h2>
             <ul>
                 <li><a href="#">Fonctionnement du site</a></li>
@@ -330,14 +338,14 @@
                 <li><a href="#">Données et confidentialité</a></li>
             </ul>
         </div>
-        <div class="col-1">
+        <div class="col">
             <h2>Nos hébergement</h2>
             <ul>
                 <li><a href="#">Charte qualité</a></li>
                 <li><a href="#">Soumettre vos hôtel</a></li>
             </ul>
         </div>
-        <div class="col-1">
+        <div class="col">
             <h2>Assistance</h2>
             <ul>
                 <li><a href="#">Centre d'aide</a></li>
