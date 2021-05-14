@@ -400,5 +400,12 @@ footer{
   .listCard__tab {
     flex-wrap: nowrap;
   }
+  .filter {
+    display: flex;
+    align-items: baseline;
+}
+.filter h2 {
+  margin-right: 20px;
+}
 }
 
